@@ -1,9 +1,7 @@
 plugins {
-    id 'org.jetbrains.kotlin.jvm'
     id 'java'
     id 'maven-publish'
     id 'signing'
-    version '1.8.10'
 }
 
 sourceSets {
@@ -38,11 +36,10 @@ publishing {
             from components.java
 
             pom {
-                name = 'Solid Potato'
-                description = 'Solid Potato is a fun project which is created to make the tutorial - ' +
-                        'How to Create A Java Library and Publish It To Maven With Gradle-7'
-                url = 'https://github.com/nowshad-hasan/solid-potato'
-                inceptionYear = '2022'
+                name = 'Commons Tools'
+                description = 'Commons Tools Utility'
+                url = 'https://github.com/kvaithin/commons-tools'
+                inceptionYear = '2023'
 
                 licenses {
                     license {
@@ -95,12 +92,4 @@ dependencies {
 
 test {
     useJUnitPlatform()
-}
-
-compileKotlin {
-    kotlinOptions.jvmTarget = '1.8'
-}
-
-compileTestKotlin {
-    kotlinOptions.jvmTarget = '1.8'
 }
