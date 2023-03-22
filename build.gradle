@@ -2,14 +2,7 @@ plugins {
     id 'java'
     id 'maven-publish'
     id 'signing'
-}
-
-sourceSets {
-    main {
-        java {
-            srcDirs = ['src']
-        }
-    }
+    id 'org.jetbrains.kotlin.jvm' version '1.8.10'
 }
 
 group = 'com.kvaithin'
